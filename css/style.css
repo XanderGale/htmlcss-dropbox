@@ -1,0 +1,101 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* border: 1px solid red; */
+}
+
+/* Body */
+body{
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* Common */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+img{
+    width: 100%;
+}
+.col{
+    float: left;
+}
+.container{
+    width: 80%;
+}
+.buttons-container{
+    margin-top: 5%;
+}
+
+/* Navbar */
+nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    color: #2d2d2d;
+    font-weight: 500;
+}
+nav .col{
+    width: 50%;
+    line-height: 50px;
+}
+nav .col:nth-of-type(2){
+    text-align: right;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    text-align: center;
+    margin: 0 3%;
+}
+nav li img{
+    vertical-align: middle;
+}
+nav li a{
+    text-decoration: none;
+    vertical-align: middle;
+    color: inherit;
+    font-weight: inherit;
+}
+
+/* Header */
+header{
+    position: relative;
+    top: 50px;
+    left: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 0;
+    background-color: #b4d0e7;
+}
+header .col img{
+    position: absolute;
+    width: 55%;
+}
+header .col{
+    width: 30%;
+}
+header .col:nth-of-type(2){
+    width: 70%;
+}
+header .title{
+    font-size: 30px;
+}
+header i{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 30px;
+}
+/* Main */
+main{
+    background-color: white;
+    height: 500px;
+}
