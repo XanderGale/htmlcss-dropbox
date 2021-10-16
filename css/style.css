@@ -9,7 +9,7 @@
 
 /* Body */
 body{
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Common */
@@ -26,9 +26,53 @@ img{
 }
 .container{
     width: 80%;
+    margin: 0 auto;
+}
+.title {
+    vertical-align: middle;
+    margin-bottom: 3%;
+}
+.title h1{
+    font-size: 75px;
+    line-height: 90px;
+}
+.title h2{
+    font-size: 45px;
+    line-height: 70px;
+}
+
+/* Buttons */
+nav .button{
+    padding: 7px 20px;
+    font-size: 13px;
+}
+
+.button{
+    text-decoration: none;
+    padding: 2% 5%;
+}
+.blue{
+    background-color: #0061ff;
+    color: white;
+    transition: 2s;
 }
 .buttons-container{
     margin-top: 5%;
+    margin-bottom: 5%;
+}
+.circle-btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #2d2d2d;
+    margin-right: 3px;
+}
+
+/* Animations */
+.blue:hover{
+    background-color: cyan;
 }
 
 /* Navbar */
@@ -38,11 +82,9 @@ nav{
     width: 100%;
     background-color: white;
     color: #2d2d2d;
-    font-weight: 500;
 }
 nav .col{
     width: 50%;
-    line-height: 50px;
 }
 nav .col:nth-of-type(2){
     text-align: right;
@@ -53,7 +95,7 @@ nav ul{
 nav li{
     display: inline-block;
     text-align: center;
-    margin: 0 3%;
+    padding: 3% 5%;
 }
 nav li img{
     vertical-align: middle;
@@ -70,10 +112,7 @@ header{
     position: relative;
     top: 50px;
     left: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 0;
+    padding: 5% 10%;
     background-color: #b4d0e7;
 }
 header .col img{
@@ -86,16 +125,41 @@ header .col{
 header .col:nth-of-type(2){
     width: 70%;
 }
-header .title{
-    font-size: 30px;
-}
 header i{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     font-size: 30px;
 }
 /* Main */
 main{
     background-color: white;
-    height: 500px;
+    margin-top: 20%;
+}
+.invoicing.clearfix .col{
+    width: 30%;
+}
+.payplan.clearfix .col{
+    width: calc((100% / 3) - 2%);
+    margin: auto;
+}
+.payplan.clearfix .col:nth-of-type(2){
+    margin: 0 30px;
+}
+.payplan.clearfix .col > *{
+    border: 1px solid #e8e8ea;
+    padding: 10% 5%;
+}
+.payplan-choose{
+    vertical-align: middle;
+}
+.payplan-choose span{
+    margin: 0 3%;
+}
+.payplan-details span{
+    display: block;
+}
+main .payplan.clearfix .col .payplan-name{
+    text-align: center;
+    padding: 2% 0;
+    border-bottom-style: none;
 }
