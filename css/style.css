@@ -21,11 +21,14 @@ body{
 img{
     width: 100%;
 }
+i{
+    margin-right: 2%;
+}
 .col{
     float: left;
 }
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 .title {
@@ -135,9 +138,22 @@ main{
     background-color: white;
     margin-top: 20%;
 }
-.invoicing.clearfix .col{
-    width: 30%;
+
+/* Main Invoicing */
+.invoicing{
+    margin: 3% 0;
 }
+.payplan-choose span{
+    width: fit-content;
+    vertical-align: middle;
+    margin-right: 1%;
+}
+.payplan-choose{
+    display: inline;
+}
+
+
+/* Main Payplan Columns */
 .payplan.clearfix .col{
     width: calc((100% / 3) - 2%);
     margin: auto;
@@ -147,14 +163,10 @@ main{
 }
 .payplan.clearfix .col > *{
     border: 1px solid #e8e8ea;
-    padding: 10% 5%;
+    padding: 10%;
 }
-.payplan-choose{
-    vertical-align: middle;
-}
-.payplan-choose span{
-    margin: 0 3%;
-}
+
+/* Main Payplan Columns -> Text Format */
 .payplan-details span{
     display: block;
 }
@@ -162,4 +174,48 @@ main .payplan.clearfix .col .payplan-name{
     text-align: center;
     padding: 2% 0;
     border-bottom-style: none;
+}
+main .payplan.clearfix .col .payplan-name{
+    text-align: center;
+    padding: 2% 0;
+    border-bottom-style: none;
+}
+main .payplan.clearfix .col .payplan-details h3{
+    font-size: 30px;
+    margin-bottom: 7%;
+}
+main .payplan.clearfix .col .payplan-details .price{
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+main .payplan.clearfix .col .payplan-details .time{
+    color: #7e8c97;
+    margin-bottom: 15%;
+}
+main .trynow{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.go-pay::after {
+	display: block;
+	content: '';
+	width: 30%;
+	height: 1px;
+	background-color: #e8e8ea;
+	margin: 20% 0;
+}
+
+/* Main Payplan Lists */
+main .payplan.clearfix .col .fa-ul{
+    margin-left: 0;
+    padding-left: 8%;
+}
+main .payplan.clearfix .col .fa-ul li,
+main .payplan.clearfix .col .functions-list > *{
+    margin-bottom: 10%;
+}
+main .payplan.clearfix .col .fa-ul li .fa-check{
+    color: #0061ff;
 }
