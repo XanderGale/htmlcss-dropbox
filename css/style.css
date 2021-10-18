@@ -30,6 +30,10 @@ section{
 .col{
     float: left;
 }
+.row{
+    display: block;
+    width: 100%;
+}
 .container{
     width: 70%;
     margin: 0 auto;
@@ -170,7 +174,7 @@ main{
     margin: auto;
 }
 .payplan.clearfix .col:nth-of-type(2){
-    margin: 0 30px;
+    margin: 0 3%;
 }
 .payplan.clearfix .col > *{
     border: 1px solid #e8e8ea;
@@ -281,3 +285,15 @@ main .partner .col p{
 }
 
 /* Dropbox Business */
+main .dropbox-business .row .col{
+    width: calc((100% / 3) - 2%);
+    margin: auto;
+    margin-bottom: 5%;
+}
+main .dropbox-business .row .col:nth-of-type(2){
+    margin: 0 3%;
+}
+main .dropbox-business .row .col h3{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
