@@ -24,6 +24,9 @@ img{
 i{
     margin-right: 2%;
 }
+section{
+    margin: 15% 0;
+}
 .col{
     float: left;
 }
@@ -58,6 +61,11 @@ nav .button{
     background-color: #0061ff;
     color: white;
     transition: 2s;
+}
+.white{
+    background-color: white;
+    color: black;
+    border: 1px solid #2d2d2d;
 }
 .buttons-container{
     margin-top: 5%;
@@ -143,6 +151,9 @@ main{
 .invoicing{
     margin: 3% 0;
 }
+.payplan{
+    margin-bottom: 3%;
+}
 .payplan-choose span{
     width: fit-content;
     vertical-align: middle;
@@ -170,25 +181,25 @@ main{
 .payplan-details span{
     display: block;
 }
-main .payplan.clearfix .col .payplan-name{
+main .payplan.clearfix .payplan-name{
     text-align: center;
     padding: 2% 0;
     border-bottom-style: none;
 }
-main .payplan.clearfix .col .payplan-name{
+main .payplan.clearfix .payplan-name{
     text-align: center;
     padding: 2% 0;
     border-bottom-style: none;
 }
-main .payplan.clearfix .col .payplan-details h3{
+main .payplan.clearfix .payplan-details h3{
     font-size: 30px;
     margin-bottom: 7%;
 }
-main .payplan.clearfix .col .payplan-details .price{
+main .payplan.clearfix .payplan-details .price{
     margin-bottom: 3%;
     font-weight: bold;
 }
-main .payplan.clearfix .col .payplan-details .time{
+main .payplan.clearfix .payplan-details .time{
     color: #7e8c97;
     margin-bottom: 15%;
 }
@@ -198,7 +209,7 @@ main .trynow{
     text-align: center;
     margin-bottom: 7%;
 }
-.go-pay::after {
+.functions-list::before {
 	display: block;
 	content: '';
 	width: 30%;
@@ -208,18 +219,65 @@ main .trynow{
 }
 
 /* Main Payplan Lists */
-main .payplan.clearfix .col .fa-ul{
+main .payplan.clearfix .fa-ul{
     margin-left: 0;
     padding-left: 8%;
     margin-bottom: 20%;
 }
-main .payplan.clearfix .col .hotpoints{
+main .payplan.clearfix .hotpoints{
     height: 400px;
 }
-main .payplan.clearfix .col .fa-ul li,
-main .payplan.clearfix .col .functions-list > *{
+main .payplan.clearfix .fa-ul li,
+main .payplan.clearfix .functions-list > *{
     margin-bottom: 10%;
 }
-main .payplan.clearfix .col .fa-ul li .fa-check{
+main .payplan.clearfix .fa-ul li .fa-check{
     color: #0061ff;
 }
+
+/* Enterprise */
+main .payplan.enterprise .col{
+    width: 70%;
+}
+main .payplan.enterprise .col:nth-of-type(2){
+    width: 30%;
+}
+main .payplan.enterprise > *{
+    border: 1px solid #e8e8ea;
+}
+main .payplan.enterprise .payplan-name{
+    text-align: center;
+    padding: 1% 0;
+}
+main .payplan.enterprise .clearfix{
+    padding: 3%;
+}
+main .payplan.enterprise .clearfix h3{
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+main .payplan.enterprise .clearfix h4{
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+main .payplan.enterprise .clearfix p{
+    font-size: 14px;
+}
+
+/* Find Partner */
+main .partner .col{
+    width: 50%;
+}
+main .partner .col.text{
+    padding: 4%;
+}
+main .partner .col h3{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+main .partner .col p{
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+
+/* Dropbox Business */
