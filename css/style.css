@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    /* border: 1px solid red; */
 }
 
 /* Body */
@@ -21,6 +19,11 @@ body{
 img{
     width: 100%;
 }
+.image-fit {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 i{
     margin-right: 2%;
 }
@@ -29,10 +32,6 @@ section{
 }
 .col{
     float: left;
-}
-.row{
-    display: block;
-    width: 100%;
 }
 .container{
     width: 70%;
@@ -70,6 +69,9 @@ nav .button{
     background-color: white;
     color: black;
     border: 1px solid #2d2d2d;
+}
+.no-border{
+    border: 0;
 }
 .buttons-container{
     margin-top: 5%;
@@ -229,7 +231,7 @@ main .payplan.clearfix .fa-ul{
     margin-bottom: 20%;
 }
 main .payplan.clearfix .hotpoints{
-    height: 400px;
+    min-height: 400px;
 }
 main .payplan.clearfix .fa-ul li,
 main .payplan.clearfix .functions-list > *{
@@ -296,4 +298,104 @@ main .dropbox-business .row .col:nth-of-type(2){
 main .dropbox-business .row .col h3{
     font-size: 30px;
     margin-bottom: 5%;
+}
+
+/* Dropbox Teams */
+main section.dropbox-teams{
+    margin-bottom: 0;
+}
+main .dropbox-teams .title{
+    margin-bottom: 5%;
+}
+main .dropbox-teams .title h2{
+    margin-bottom: 5%;
+}
+main .dropbox-teams .col.img{
+    width: 400px;
+    height: 400px;
+    background-color: magenta;
+}
+main .dropbox-teams .col.text{
+    width: calc(100% - 800px);
+    height: 400px;
+    background-color: limegreen;
+}
+main .dropbox-teams .col.img .col.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+main .dropbox-teams .col.box img{
+    padding: 10%;
+    filter: invert(100%);
+}
+main .end-business {
+    padding: 5% 0;
+    background-color: #b4d0e7;
+}
+main .end-business .col.title{
+    width: 60%;
+}
+main .end-business .col.button{
+    width: 40%;
+    text-align: right;
+}
+main .end-business .col.title h2{
+    margin-bottom: 0;
+}
+
+/* Questions */
+main .questions{
+    padding: 10% 0;
+    margin-bottom: 0;
+}
+main .questions ul{
+    list-style-type: none;
+}
+main .questions li{
+    display: block;
+    width: 100%;
+}
+main .questions li span{
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+main .questions li i{
+    display: inline-block;
+    width: 7%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+main .questions li::before {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #e8e8ea;
+    margin: 3% 0;
+}
+main .questions ul:last-child::after{
+    display: block;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #e8e8ea;
+    margin: 3% 0;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10%;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    
 }
