@@ -63,7 +63,7 @@ nav .button{
 .blue{
     background-color: #0061ff;
     color: white;
-    transition: 2s;
+    transition: 1s;
 }
 .white{
     background-color: white;
@@ -118,7 +118,7 @@ nav .button{
 
 /* Animations */
 .blue:hover{
-    background-color: #b4d0e7;
+    background-color: #3c84ff;
 }
 
 /* Navbar */
@@ -159,9 +159,6 @@ nav li a{
 }
 nav li a:hover{
     border-bottom: 3px solid #2d2d2d;
-}
-nav li a .nav-button{
-    padding: 0;
 }
 
 /* Header */
