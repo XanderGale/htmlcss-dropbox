@@ -89,7 +89,7 @@ nav .button{
 
 /* Animations */
 .blue:hover{
-    background-color: cyan;
+    background-color: #b4d0e7;
 }
 
 /* Navbar */
@@ -99,6 +99,7 @@ nav{
     width: 100%;
     background-color: white;
     color: #2d2d2d;
+    height: 80px;
 }
 nav .col{
     width: 50%;
@@ -111,23 +112,33 @@ nav ul{
 }
 nav li{
     display: inline-block;
-    text-align: center;
-    padding: 3% 5%;
+    white-space: normal;
+    margin: 0 5%;
+    line-height: 77px;
 }
-nav li img{
+nav li a img{
     vertical-align: middle;
 }
 nav li a{
+    display: inline-block;
     text-decoration: none;
-    vertical-align: middle;
     color: inherit;
     font-weight: inherit;
+    font-size: 15px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+nav li a:hover{
+    border-bottom: 3px solid #2d2d2d;
+}
+nav li a .nav-button{
+    padding: 0;
 }
 
 /* Header */
 header{
     position: relative;
-    top: 50px;
+    top: 80px;
     left: 0;
     padding: 5% 10%;
     background-color: #b4d0e7;
