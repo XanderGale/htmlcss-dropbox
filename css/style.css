@@ -391,11 +391,45 @@ main .questions ul:last-child::after{
 footer{
     background-color: black;
     color: white;
-    padding: 10%;
+    padding: 5% 10%;
 }
 footer ul{
     list-style: none;
 }
 footer ul li{
-    
+    margin: 2% 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+footer .clearfix .col h4{
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+footer .clearfix .col{
+    width: calc(100% / 5);
+}
+footer .language::before{
+    display: block;
+	content: '';
+	width: 10%;
+	height: 1px;
+	background-color: #e8e8ea;
+    margin: 10% 0;
+}
+.language .language-select,
+.language .language-select a,
+.language .language-select i{
+    color: #e8e8ea;
+}
+.language .language-select i{
+    margin-right: 1%;
+}
+.language .lang-arrow{
+    margin-left: 5px;
+}
+.language .lang-arrow:hover{
+    cursor: pointer;
 }
