@@ -79,12 +79,21 @@ nav .button{
 }
 .circle-btn{
     display: inline-block;
+    border-radius: 50%;
     height: 15px;
     width: 15px;
-    border-radius: 50%;
     background-color: white;
-    border: 1px solid #2d2d2d;
     margin-right: 3px;
+}
+.circle-checked{
+    border: 4px solid #3c84ff;
+}
+.circle-unchecked{
+    border: 1px solid #2d2d2d;
+}
+.circle-btn:hover{
+    border: 4px solid #3c84ff;
+    cursor: pointer;
 }
 
 /* Backgrounds */
@@ -438,6 +447,10 @@ main .questions ul:last-child::after{
 	height: 1px;
 	background-color: #e8e8ea;
     margin: 3% 0;
+}
+main .questions ul li span:hover,
+main .questions ul li i:hover{
+    cursor:pointer;
 }
 
 /* Footer */
