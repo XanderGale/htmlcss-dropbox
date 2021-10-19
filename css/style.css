@@ -352,6 +352,7 @@ main section.dropbox-teams{
 }
 main .dropbox-teams .title{
     margin-bottom: 5%;
+    width: 55%;
 }
 main .dropbox-teams .title h2{
     margin-bottom: 5%;
