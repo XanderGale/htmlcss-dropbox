@@ -87,6 +87,35 @@ nav .button{
     margin-right: 3px;
 }
 
+/* Backgrounds */
+.bg-designit{
+    background-color: #a2d39b;
+}
+.designit-border{
+    border: 10px solid #2f1632;
+}
+.bg-asu{
+    background-color: #61082b;
+}
+.bg-topps{
+    background-color: red;
+}
+.bg-uf{
+    background-color: #0093ce;
+}
+.bg-wbr{
+    background-color: #d5001f;
+}
+.bg-hearst{
+    background-color: #b4d0e7;
+}
+.bg-lonelyplanet{
+    background-color: #0d2481;
+}
+.bg-clearchannel{
+    background-color: #ffd830;
+}
+
 /* Animations */
 .blue:hover{
     background-color: #b4d0e7;
@@ -329,12 +358,11 @@ main .dropbox-teams .col.img{
 main .dropbox-teams .col.text{
     width: calc(100% - 800px);
     height: 400px;
-    background-color: limegreen;
+    background-color: #f5f5f5;
 }
 main .dropbox-teams .col.img .col.box{
     width: 200px;
     height: 200px;
-    background-color: red;
 }
 main .dropbox-teams .col.box img{
     padding: 10%;
