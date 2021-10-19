@@ -382,6 +382,23 @@ main .end-business .col.button{
 main .end-business .col.title h2{
     margin-bottom: 0;
 }
+main .dropbox-teams .col.text {
+    padding: 3%;
+}
+main .dropbox-teams .team-logo{
+    width: 30%;
+}
+main .dropbox-teams .team-logo::after{
+    display: block;
+	content: '';
+	width: 30%;
+	height: 1px;
+	background-color: #e8e8ea;
+    margin: 20% 0;
+}
+main .dropbox-teams .team-text p{
+    margin-bottom: 10%;
+}
 
 /* Questions */
 main .questions{
